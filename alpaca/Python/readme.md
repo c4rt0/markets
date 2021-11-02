@@ -1,34 +1,40 @@
-1. Create virtual env
+1. Install virtual environment on your machine :
+
+```
+pip3 install python-dotenv
+```
+
+2. Create virtual env
 
 ```shell
 python -m venv alpaca_venv
 ```
 
-2. Activate venv :
+3. Activate venv :
 
 ```bash
 alpaca_venv\Scripts\activate
 ```
 
-3. Install the alpaca-trade-api
+4. Install the alpaca-trade-api
 
 ```zsh
 pip3 install alpaca-trade-api
 ```
 
-4. Install the dotenv for environment virables :
+5. Install the dotenv for environment virables :
 
 ```bash
 pip3 install python-dotenv
 ```
 
-5. Call the API:
+6. Call the API:
 
 ```sh
 python alpaca_testing.py
 ```
 
-6. You should receive response:
+7. You should receive response:
 
 ```
 Account({   'account_blocked': False,
