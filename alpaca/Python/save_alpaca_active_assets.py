@@ -4,7 +4,6 @@ import json
 from dotenv import load_dotenv
 load_dotenv()
 
-
 # authentication and connection details
 api_key = os.getenv('ALPACA_API_KEY')
 api_secret = os.getenv('ALPACA_SECRET_KEY')
