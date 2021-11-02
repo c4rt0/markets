@@ -30,7 +30,7 @@ python alpaca_testing.py
 
 6. You should receive response:
 
-```json
+```
 Account({   'account_blocked': False,
     'account_number': 'SomeAccountNumber',
     'accrued_fees': '0',
@@ -65,7 +65,7 @@ Account({   'account_blocked': False,
 
 ALSO DATA FROM REQUESTED AAPL STOCK:
 
-```json
+```
 {'AAPL': [Bar({   'c': 127.3521,
     'h': 127.44,
     'l': 126.1,
@@ -113,7 +113,7 @@ time     open     high       low     close     volume
 
 RAW DATA FORMAT:
 
-```json
+```
 {
   "AAPL": [
     {
