@@ -16,7 +16,7 @@ const resolvers = {
 const server = new GraphQLServer({ typeDefs, resolvers });
 server.start(() => console.log("Server is running on port 4000"));
 
-//HTTP request:  https://cloud.iexapis.com/stable/stock/aapl/quote?token=pk_34ef482cf8ea4265aaf8994b06f6fc25
+//HTTP request:  https://cloud.iexapis.com/stable/stock/aapl/quote?token={yourApiToken}
 
 // response :
 // {
