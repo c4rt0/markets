@@ -169,3 +169,9 @@ python -m pip install fastapi uvicorn[standard]
 ```bash
 uvicorn main:app --reload
 ```
+
+10. Install gpraphene :
+
+```bash
+pip install graphene
+```
