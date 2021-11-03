@@ -34,7 +34,7 @@ pip3 install python-dotenv
 python alpaca_testing.py
 ```
 
-7. You should receive response:
+7. Possible responses (depending on query):
 
 ```
 Account({   'account_blocked': False,
@@ -156,4 +156,16 @@ RAW DATA FORMAT:
     } //... and so on
   ]
 }
+```
+
+8. Install the fastAPI :
+
+```bash
+python -m pip install fastapi uvicorn[standard]
+```
+
+9. Run the server :
+
+```bash
+uvicorn main:app --reload
 ```
