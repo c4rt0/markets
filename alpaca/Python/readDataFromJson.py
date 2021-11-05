@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 
 # read file
 dataFile = open('alpaca_aapl.json', 'r')
@@ -15,4 +16,6 @@ stockData = dataObject['AAPL']
 
 # time...
 for i in range(len(stockData)):
-    print("Time :", stockData[i]["t"])
+    t = datetime.fromtimestamp(stockData[i]["t"])
+    day = t.strftime('%Y-%m-%d')
+    print("Time :", day)
