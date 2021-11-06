@@ -14,8 +14,18 @@ stockData = dataObject['AAPL']
 
 # # Extracting individual elements: # #
 
-# time...
+# Printing extracted data
 for i in range(len(stockData)):
     t = datetime.fromtimestamp(stockData[i]["t"])
+    o = stockData[i]["o"]
+    c = stockData[i]["c"]
+    h = stockData[i]["h"]
+    l = stockData[i]["l"]
+    v = stockData[i]["v"]
     day = t.strftime('%Y-%m-%d')
-    print("Time :", day)
+    print(i, "\n_________________ \nTime :", day)
+    print("Open :", o)
+    print("Close :", c)
+    print("High :", h)
+    print("Low :", l)
+    print("Volume :", v, "\n")
