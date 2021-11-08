@@ -16,25 +16,19 @@ python -m venv alpaca_venv
 alpaca_venv\Scripts\activate
 ```
 
-4. Install the alpaca-trade-api
+4. Install all of the required libraries with :
 
-```zsh
-pip3 install alpaca-trade-api
+```
+pip3 install -r requirements.txt
 ```
 
-5. Install the dotenv for environment virables :
-
-```bash
-pip3 install python-dotenv
-```
-
-6. Call the API:
+5. Call the API:
 
 ```sh
 python alpaca_testing.py
 ```
 
-7. Possible responses (depending on query):
+Possible responses (depending on query):
 
 ```
 Account({   'account_blocked': False,
@@ -158,20 +152,22 @@ RAW DATA FORMAT:
 }
 ```
 
-8. Install the fastAPI :
-
-```bash
-python -m pip install fastapi uvicorn[standard]
-```
-
-9. Run the server :
+6. Run the server :
 
 ```bash
 uvicorn main:app --reload
 ```
 
-10. Install gpraphene :
+7. Visit graphql endpoint:
 
-```bash
-pip install graphene
+```
+http://127.0.0.1:8000/graphql
+```
+
+Run a simple query:
+
+```graphql
+{
+  hello(name: "Adam")
+}
 ```
