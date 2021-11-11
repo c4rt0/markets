@@ -24,8 +24,8 @@ for i in range(len(stockData)):
     v = stockData[i]["v"]
     day = t.strftime('%Y-%m-%d')
     print(i, "\n_________________ \nTime :", day)
-    print("Open :", o)
-    print("Close :", c)
-    print("High :", h)
-    print("Low :", l)
-    print("Volume :", v, "\n")
+    print(f'Open :{o:>15}')
+    print(f'Close : {c:>13}')
+    print(f'High : {h:>15}')
+    print(f'Low : {l:>15}')
+    print(f'Volume : {v:>15}')
